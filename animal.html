@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu | buitlin</title>
+</head>
+
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .headmenu {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        background-color: black;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        color: white;
+    }
+
+    .explore {
+        box-sizing: border-box;
+        background-color: rgb(50, 72, 241);
+        padding: 6px;
+        border-radius: 4px;
+    }
+
+    .explore:hover {
+        transform: scale(1.04);
+        transition: 0.2s ease-in-out;
+        box-shadow: 3px 4px 5px rgba(194, 12, 210, 0.4);
+    }
+
+    .unity {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        margin-right: 20px;
+
+    }
+    .joinlog{
+        display:flex;
+        flex-direction:row;
+        gap:10px;
+    }
+    .common:hover{
+        color:gold;
+        transition:0.2s ease-in-out;
+        transform:scale(1.2);
+        cursor:pointer;
+    }
+    .search:hover{
+        color:gold;
+        cursor:pointer;
+        transform:scale(1.4);
+    }
+    .join{
+        color:white;
+    }
+</style>
+<script src="https://kit.fontawesome.com/f46d2a9e0f.js" crossorigin="anonymous"></script>
+
+<body>
+    <section class="headmenu">
+        <div class="logo">
+            <img src="animal.png" alt="main logo" style="height:70px">
+        </div>
+        <div class="unity">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="explore">
+                EXPLORE NATURE
+            </div>
+            <div class="joinlog">
+                <div class="join common">
+                    <a href="Register.html">JOIN</a>
+                </div>
+                <div class="veriline">
+                    |
+                </div>
+                <div class="login common">
+                    LOG IN
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
