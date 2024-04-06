@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <script src="https://kit.fontawesome.com/f46d2a9e0f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        .frame {
+            margin: 0px auto;
+            max-width: 450px;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #da2893, #b5ad0c);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #29c9d4, #da33cf);
+            font-family: Arial, sans-serif;
+            color: white;
+            /* Text color on the background */
+        }
+
+        .Login {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .boxm {
+            border-left: none;
+            border-top: none;
+            width: 270px;
+            height: 30px;
+            margin: 10px;
+
+        }
+
+        .marleft {
+            margin-left: 80px;
+            padding-right: 70px;
+        }
+
+        .boxm:hover {
+            transition: 0.2s ease-in-out;
+            transform: scale(1.09);
+            border: 2px solid maroon;
+            border-left: none;
+            border-top: none;
+        }
+
+        .forgot {
+            display: flex;
+            justify-content: end;
+            padding-right: 25px;
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .forgot:hover {
+            color: green;
+            cursor: pointer;
+        }
+
+        .user,
+        .pass {
+            font-weight: bold;
+        }
+
+        .login {
+            width: 90%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 80px;
+            background: linear-gradient(to right, #FF9933, #FFFFFF, #128807);
+            color: orangered;
+            font-size: larger;
+            margin-bottom: 30px;
+        }
+
+        .login:hover {
+            transition: 0.2s ease-in-out;
+            transform: scale(1.09);
+            cursor: pointer;
+        }
+
+        .orsignup {
+            display: flex;
+            justify-content: center;
+            font-size: small;
+            font-weight: 100;
+        }
+
+        .orsignup:hover {
+            color: #128807;
+            cursor: pointer;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        .common:hover {
+            transition: 0.2s ease-in-out;
+            transform: scale(1.4);
+            cursor: pointer;
+        }
+
+        .footer {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            color: crimson;
+            font-size: larger;
+            padding-bottom: 10px;
+        }
+
+        .footer:hover {
+            transition: 0.2s ease-in-out;
+            transform: scale(1.4);
+            color: darkmagenta;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="Login">
+            <span class="log">Login</span>
+        </div>
+        <div class="marleft">
+            <div class="info">
+                <div class="username">
+                    <span class="user">username</span> <br>
+                    <input type="text" id="username" name="user" class="boxm" placeholder="Type your username">
+
+                </div>
+                <div class="password">
+                    <span class="pass">password</span> <br>
+                    <input type="password" id="password" name="pass" class="boxm" placeholder="Type your Password">
+                </div>
+            </div>
+
+            <div class="forgot">
+                <span class="forgot">forgot password?</span>
+            </div>
+
+            <div class="loginbutton">
+                <span><button class="login">Login</button></span>
+            </div>
+
+            <div class="orsignup">
+                <span class="or">Or Sign Up Using</span>
+            </div>
+
+            <div class="logos">
+                <div class="google common"><i class="fa-brands fa-google fa"></i></i></i></div>
+                <div class="face common"><i class="fa-brands fa-facebook"></i></div>
+                <div class="tweet common"><i class="fa-brands fa-twitter"></i></i></div>
+            </div>
+            <div class="footer">
+                <span class="sign"> sign in </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

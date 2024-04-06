@@ -66,11 +66,46 @@
     .join{
         color:white;
     }
+    .ok{
+    
+    }
     
 </style>
 <script src="https://kit.fontawesome.com/f46d2a9e0f.js" crossorigin="anonymous"></script>
+<script>
+    const images = [
+  "deer.png",
+  "parrot.jpeg",
+  "tiger.jpg",
+];
 
+let currentIndex = 0;
+
+// Function to change image
+function changeImage() {
+  const imageElement = document.getElementById('image');
+  
+  // Increment index
+  currentIndex++;
+  
+  // Reset index if it goes beyond the length of the images array
+  if (currentIndex >= images.length) {
+    currentIndex = 0;
+  }
+  
+  // Change the src attribute of the image element
+  imageElement.src = images[currentIndex];
+}
+
+// Set interval to call changeImage function every 5 seconds (5000 milliseconds)
+setInterval(changeImage, 5000);
+
+</script>
 <body>
+    <div class="back">
+        <img id="image" src="./animal-images/deer.jpg" alt="Default Image" class="ok">
+    </div>
+  <script src="script.js" defer></script>
     <section class="headmenu">
         <div class="logo">
             <img src="animal.png" alt="main logo" style="height:70px">
