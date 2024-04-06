@@ -13,12 +13,18 @@
         margin: 0px;
         padding: 0px;
     }
-
+    body{
+        height:100vh;
+        background-image: url("front.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
     .headmenu {
+        padding-top:30px;
         display: flex;
         flex-direction: row;
         gap: 50px;
-        background-color: black;
         align-items: center;
         justify-content: space-between;
         padding-left: 20px;
@@ -65,50 +71,18 @@
     }
     .join{
         color:white;
+        
     }
-    .ok{
-    
-    }
+
     
 </style>
 <script src="https://kit.fontawesome.com/f46d2a9e0f.js" crossorigin="anonymous"></script>
-<script>
-    const images = [
-  "deer.png",
-  "parrot.jpeg",
-  "tiger.jpg",
-];
 
-let currentIndex = 0;
-
-// Function to change image
-function changeImage() {
-  const imageElement = document.getElementById('image');
-  
-  // Increment index
-  currentIndex++;
-  
-  // Reset index if it goes beyond the length of the images array
-  if (currentIndex >= images.length) {
-    currentIndex = 0;
-  }
-  
-  // Change the src attribute of the image element
-  imageElement.src = images[currentIndex];
-}
-
-// Set interval to call changeImage function every 5 seconds (5000 milliseconds)
-setInterval(changeImage, 5000);
-
-</script>
 <body>
-    <div class="back">
-        <img id="image" src="./animal-images/deer.jpg" alt="Default Image" class="ok">
-    </div>
   <script src="script.js" defer></script>
     <section class="headmenu">
         <div class="logo">
-            <img src="animal.png" alt="main logo" style="height:70px">
+            <img src="logos.png" alt="main logo" style="height:70px">
         </div>
         <div class="unity">
             <div class="search">
@@ -125,7 +99,7 @@ setInterval(changeImage, 5000);
                     |
                 </div>
                 <div class="login common">
-                    LOG IN
+                    <a href="logIn.html">LOG IN</a>
                 </div>
             </div>
         </div>
